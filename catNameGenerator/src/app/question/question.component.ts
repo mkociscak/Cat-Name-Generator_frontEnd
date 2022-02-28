@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UserService } from '../services/user/user.service';
 
 @Component({
   selector: 'app-question',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuestionComponent implements OnInit {
 
-  question:string = 'Do you want a new name for your cat?';
+  question:string;
+  username:string; 
 
-  constructor() { }
+  constructor(private userService:UserService) { 
+    this.question = 'Do you want a new name for your cat?';
+    this.username = this.userService.getUsername();
+  }
 
   ngOnInit(): void {
   }
