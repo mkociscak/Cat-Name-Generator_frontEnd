@@ -7,6 +7,11 @@ import { NavTopComponent } from './nav-top/nav-top.component';
 import { NavBottomComponent } from './nav-bottom/nav-bottom.component';
 import { QuestionComponent } from './question/question.component';
 import { CharacterOptionsComponent } from './character-options/character-options.component';
+import { EntryComponent } from './entry/entry.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
+
 
 @NgModule({
   declarations: [
@@ -14,11 +19,14 @@ import { CharacterOptionsComponent } from './character-options/character-options
     NavTopComponent,
     NavBottomComponent,
     QuestionComponent,
-    CharacterOptionsComponent
+    CharacterOptionsComponent,
+    EntryComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

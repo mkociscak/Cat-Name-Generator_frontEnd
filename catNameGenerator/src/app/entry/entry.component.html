@@ -1,0 +1,29 @@
+<p>entry works!</p>
+<div class="background"></div>
+
+
+<section>
+    <h4>Type in your selection and click the next button.</h4>
+    <input [(ngModel)]="entry" type="text" placeholder="Type here"/>
+    
+    <input (click)="findCharacter(entry)" type="submit" value="Next"/> 
+     
+</section>
+
+
+
+
+
+
+<!--
+<section *ngIf="weather">
+    <h3>Here's the weather in {{weather.name}}</h3>
+    <p>Currently {{weather.weather[0].description}}</p>
+    <p>There's a high of {{weather.main.temp_max}} degrees and a low of {{weather.main.temp_min}}</p>
+</section>
+
+(keyup)="findWeather(zip)"/>
+-->
+
+
+
