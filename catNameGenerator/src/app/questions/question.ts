@@ -9,7 +9,6 @@ export const QUESTION = [
                 id: 1,
                 text: "male"
             },
-
             {
                 id: 2,
                 text: "female"
