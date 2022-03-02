@@ -1,0 +1,66 @@
+
+
+    
+    
+    <div class="questions-page">
+
+        <div class ="containerQuestion">
+            <div class="question">
+                <div *ngFor= "let text of question.text" >
+                    <div>
+                        <h1><a routerLink = "/questions/{{question.id}}">{{question.text}}</a></h1>
+                    </div>
+                </div>
+             </div>    
+        </div>
+
+        <div class="containerOptions">
+            
+                <div class="item"id="choiceOne">{{question.id}}</div>
+                <div class="item"id="choiceTwo">{{question.options}}</div>
+                <div class="item"id="choiceThree">{{question.id.options.id}}</div>
+                <div class="item"id="choiceFour">{{question.options.text}}</div>
+                <div class="item"id="choiceFive">{{question.title}}</div>
+
+        </div>
+
+        <div class="containerButtons">
+            <div class="buttonNext">NEXT</div>
+        </div>
+
+        
+            
+    
+
+
+
+    </div>
+
+    
+
+    
+
+
+    <!--
+        <a routerLink="/questions/{{question.id}}">{{question.text}}/a>
+ <input (click)="findWeather(zip)" type="submit" value="Search"/>
+        </div>
+<input (click)="submitChoice()" type="submit" value=""
+
+
+        <div class = "buttonPrevious">
+        <a href="" class="previous">&#8249;</a>
+    </div>
+
+            <div class="choice">
+            <div *ngFor= "let choiceNum of options.num" >
+            <div class="router">
+               <a routerLink = "/character-options/{{options.num}}/">"/character-options/{{options.nextNum}}</a>
+            </div>
+            </div>
+            <router-outlet></router-outlet>
+            </div>
+        -->
+    
+    
+

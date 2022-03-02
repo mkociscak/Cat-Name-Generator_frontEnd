@@ -1,10 +1,35 @@
 
- /* middle containing options */
- .options-page {
+ 
+
+   /* question */
+.containerQuestion {
+  position:fixed;
+  z-index: 4;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  top: 22%;
   width: 100%;
-  height: 35%;
-  top:35%;
- }
+  height: 150px;
+}
+
+  .question {
+    background-color: #777777;
+    position:fixed;
+    z-index: 5;
+    height: 100px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    color: rgb(211, 230, 128);
+    font-family: "Allerta stencil";
+    font-size: 30px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+
 .containerOptions {
   background-color: rgb(204, 204, 204);
     position:fixed;
@@ -35,6 +60,8 @@
     color: rgb(25, 72, 112);
   }
   
+
+
  /* bottom Next button */
 .containerButtons {
   position:fixed;
@@ -61,4 +88,8 @@
     text-align: center;
     background-color: #777777;
     border-radius: 15px;
+}
+.buttonNext:hover {
+  cursor: pointer;
+  color:white;
 }

@@ -5,11 +5,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavTopComponent } from './nav-top/nav-top.component';
 import { NavBottomComponent } from './nav-bottom/nav-bottom.component';
-//import { QuestionComponent } from './question/question.component';
-import { CharacterOptionsComponent } from './character-options/character-options.component';
+import { QuestionsComponent } from './questions/questions.component';
 //import { EntryComponent } from './entry/entry.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { QUESTION } from './questions/question';
 
 
 
@@ -18,15 +18,16 @@ import { HttpClientModule } from '@angular/common/http';
     AppComponent,
     NavTopComponent,
     NavBottomComponent,
-    //QuestionComponent,
-    CharacterOptionsComponent,
+    QuestionsComponent,
+    
     //EntryComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

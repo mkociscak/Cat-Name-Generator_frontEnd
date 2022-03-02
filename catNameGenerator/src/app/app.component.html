@@ -1,15 +1,12 @@
 <div>
-  <app-nav-top></app-nav-top>
+<app-nav-top></app-nav-top>
+<router-outlet></router-outlet>
 </div>
-
-
 
 <div>
-  <app-character-options></app-character-options>
+  <app-questions></app-questions>
   <router-outlet></router-outlet>
 </div>
-
-
 
 <div>
   <app-nav-bottom></app-nav-bottom>
@@ -19,20 +16,29 @@
 
 
 
+
+
+
+
+
+
 <!--
-<div>
-  <app-question></app-question>
-</div>
 
-
-<div>
-  <app-entry></app-entry>
-</div>
 -->
 
 
 <!--<div>
+<nav>
+  Questions
   <ul>
-    <li *ngFor="let name of names">{{name.personality}}</li>
+    <li *ngFor="let question of questions">{{name.personality}}
+
+    </li>
   </ul>
-</div>-->
+</nav>
+
+<div>
+  <app-questions></app-questions>  
+</div>
+
+-->
