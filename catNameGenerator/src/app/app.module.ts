@@ -5,9 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavTopComponent } from './nav-top/nav-top.component';
 import { NavBottomComponent } from './nav-bottom/nav-bottom.component';
-import { QuestionComponent } from './question/question.component';
+//import { QuestionComponent } from './question/question.component';
 import { CharacterOptionsComponent } from './character-options/character-options.component';
-import { EntryComponent } from './entry/entry.component';
+//import { EntryComponent } from './entry/entry.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -18,9 +18,9 @@ import { HttpClientModule } from '@angular/common/http';
     AppComponent,
     NavTopComponent,
     NavBottomComponent,
-    QuestionComponent,
+    //QuestionComponent,
     CharacterOptionsComponent,
-    EntryComponent
+    //EntryComponent
   ],
   imports: [
     BrowserModule,

@@ -8,6 +8,6 @@ export class UserService {
   constructor() { }
 
   getUsername(): string {
-    return 'WHY';
+    return '(del user)';
   }
 }

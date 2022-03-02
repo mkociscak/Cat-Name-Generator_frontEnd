@@ -1,3 +1,52 @@
-h4 {
-    background-color: lightgray;
-}
+.Nav {
+    overflow: hidden;
+    background-color: #e7e96d;
+    padding: 20px 10px;
+    height: 150px;
+  }
+  
+  /* Style the header links */
+  .Nav a {
+    position: fixed;
+    right: 100px;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-family: 'Darker Grotesque';
+    font-size: 70px;
+    border-radius: 4px;
+  }
+  
+  /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+  .logo {
+    position: fixed;
+    top:70px;
+    left: 100px;
+    font-size: 90px;
+    font-weight: bold;
+    font-family: "Allerta stencil";
+  }
+  
+  /* Change the background color on mouse-over */
+  .Nav a:hover {
+    color:white;
+  }
+  
+  /* Style the active/current link*/
+  .Nav a.active {
+    color:white;
+  }
+  
+  
+  /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+  @media screen and (max-width: 500px) {
+    .Nav a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .Nav-right {
+      float: none;
+    }
+  }
