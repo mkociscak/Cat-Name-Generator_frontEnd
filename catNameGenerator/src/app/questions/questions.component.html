@@ -4,7 +4,7 @@
 
         <div class ="containerQuestion">
             <div class="question">
-                <div *ngFor= "let text of question.text" >
+                <div *ngFor= "let question of questions.texts" >
                     <div>
                         <h1><a routerLink = "/questions/{{question.id}}">{{question.text}}</a></h1>
                     </div>
@@ -14,27 +14,13 @@
 
         <div class="containerOptions">
             
-                <div class="item"id="choiceOne">{{question.id}}</div>
-                <div class="item"id="choiceTwo">{{question.options}}</div>
-                <div class="item"id="choiceThree">{{question.id.options.id}}</div>
-                <div class="item"id="choiceFour">{{question.options.text}}</div>
-                <div class="item"id="choiceFive">{{question.title}}</div>
-
+                <div class="item">{{question.id}}</div>
+                <div class="item">{{question.options}}</div>
+                <div class="item">{{question.id.options.id}}</div>
+                <div class="item">{{question.options.text}}</div>
+                <div class="item">{{question.title}}</div>
         </div>
 
         <div class="containerButtons">
-            <input class="buttonNext">NEXT</div>
-        </div>
-
-        
-            
+            <button submit class="buttonNext">NEXT</button>
     
-
-
-
-   
-
-   
-    
-    
-
