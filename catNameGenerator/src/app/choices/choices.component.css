@@ -59,7 +59,7 @@ body {
   height: 140px;
 }
 
-  .questions {
+  .question {
     background-color: #777777;
     position:relative;
     z-index: 5;

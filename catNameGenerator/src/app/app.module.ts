@@ -8,6 +8,7 @@ import { NavBottomComponent } from './nav-bottom/nav-bottom.component';
 import { QuestionsComponent } from './questions/questions.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { ChoicesComponent } from './choices/choices.component';
 
 
 
@@ -17,6 +18,7 @@ import { HttpClientModule } from '@angular/common/http';
     NavTopComponent,
     NavBottomComponent,
     QuestionsComponent,
+    ChoicesComponent,
   
   ],
   imports: [

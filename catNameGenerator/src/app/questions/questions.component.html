@@ -1,18 +1,65 @@
-
-
-    <div class="questions-page">
+ <div class="questions-page">
 
         <div class ="containerQuestion">
-            <div class="question">
-                <div *ngFor= "let question of questions.texts" >
-                    <div>
-                        <h1><a routerLink = "/questions/{{question.id}}">{{question.text}}</a></h1>
-                    </div>
-                </div>
-             </div>    
+            <div class="questions">
+                <ul>
+                    <li *ngFor="let question of questions"> {{question.text}}<!--One only/link to question.id+1 --->
+                        
+                    </li>
+                </ul>
+                
+          
+             </div>  
+             <router-outlet></router-outlet>
         </div>
 
-        <div class="containerOptions">
+
+        <div class="choices-page">
+
+            <div class ="containerOptions">
+                
+                    <div class="item">{{question.optionText1}}</div><!--link to next question/next set-->
+                    <div class="item">{{question.optionText2}}</div>
+                    <div class="item">{{question.optionText3}}</div>
+                    <div class="item">{{question.optionText4}}</div>
+                    <div class="item">{{question.optionText5}}</div>
+                        
+                </div>   
+                <router-outlet></router-outlet>
+            </div>
+
+        
+        <div class="containerButtons">
+            <button submit class="buttonNext">NEXT</button><!--move router lin here?-->
+        </div>
+        
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+            <!--
+                
+                <h1><a routerLink="{{question.id}}">{{question.id}}</a></h1>------One only/link to question.id+1 -----
+                
+                <a routerLink = "/questions/{{question.id}}"> ></a>
+                questions/{{question.id}}/
+            
+            <div *ngFor= "let question of questions.texts" >
+                
+            
+            <div class="containerOptions">
             
                 <div class="item">{{question.id}}</div>
                 <div class="item">{{question.options}}</div>
@@ -21,6 +68,23 @@
                 <div class="item">{{question.title}}</div>
         </div>
 
-        <div class="containerButtons">
-            <button submit class="buttonNext">NEXT</button>
-    
+            <ul *ngFor="let question of questions">
+                        <li>
+                            <h1><a routerLink="{{question.id}}"></a></h1>
+                        </li>
+                    </ul>
+
+
+<div class="posts">
+      <div *ngFor= "let posts of city.posts" >
+      <div>
+         <h2><a routerLink = "/cities/{{city.id}}/posts/{{posts.id}}" >{{posts.title}}</a></h2>
+          <p>{{posts.author}}</p>
+      </div>
+      </div>
+  <router-outlet></router-outlet>
+  </div>
+
+  <h1><a routerLink="questions/{{question.id}}/{{question.text}}/"></a></h1>
+
+            -->

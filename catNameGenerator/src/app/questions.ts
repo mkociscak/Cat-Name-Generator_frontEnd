@@ -4,16 +4,11 @@ export const QUESTION = [
         id: 1,
         title: "gender",
         text: "Is your cat male or female?",
-        options: [
-            {
-                id: 1,
-                text: "male"
-            },
-            {
-                id: 2,
-                text: "female"
-            }
-        ]
+        optionText1: "",
+        optionText2: "male",
+        optionText3: "",
+        optionText4: "female",
+        optionText5: "",
     },
     {
         id: 2,
